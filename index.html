@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Ananya S | Data Analyst</title>
+
+<style>
+
+/* ===== GLOBAL ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #f8f6ff, #fdf2f8);
+  color: #2d2a32;
+  scroll-behavior: smooth;
+  line-height: 1.6;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background: rgba(255,255,255,0.75);
+  backdrop-filter: blur(10px);
+  padding: 14px;
+  text-align: center;
+  z-index: 1000;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+
+.navbar a {
+  margin: 0 18px;
+  color: #5b4b73;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.navbar a:hover {
+  color: #a78bfa;
+}
+
+/* ===== HERO ===== */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 56px;
+  background: linear-gradient(90deg, #a78bfa, #f9a8d4);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.hero p:first-of-type {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.hero p:last-of-type {
+  color: #6b7280;
+  max-width: 600px;
+}
+
+/* ===== SECTION ===== */
+.section {
+  padding: 80px 20px;
+  max-width: 1100px;
+  margin: auto;
+  opacity: 0;
+  transform: translateY(40px);
+  transition: 0.8s ease;
+}
+
+.section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.section h2 {
+  margin-bottom: 25px;
+  font-size: 28px;
+}
+
+/* ===== GRID ===== */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+/* ===== CARD ===== */
+.card {
+  background: rgba(255,255,255,0.65);
+  backdrop-filter: blur(10px);
+  padding: 25px;
+  border-radius: 18px;
+  border: 1px solid rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(167,139,250,0.2);
+}
+
+/* ===== SKILLS ===== */
+.skill {
+  margin-bottom: 18px;
+}
+
+.skill-bar {
+  background: #ede9fe;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.skill-fill {
+  height: 10px;
+  background: linear-gradient(90deg, #a78bfa, #f9a8d4);
+}
+
+/* ===== PROJECT ===== */
+.project-img {
+  width: 100%;
+  margin-top: 12px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project-img:hover {
+  transform: scale(1.02);
+}
+
+.project-link {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #a78bfa, #f9a8d4);
+  color: white;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.project-link:hover {
+  box-shadow: 0 5px 20px rgba(249,168,212,0.4);
+}
+
+/* ===== CONTACT ===== */
+.contact-buttons a {
+  display: inline-block;
+  margin: 8px;
+  padding: 10px 18px;
+  border-radius: 8px;
+  background: rgba(255,255,255,0.8);
+  text-decoration: none;
+  color: #2d2a32;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.contact-buttons a:hover {
+  background: linear-gradient(135deg, #a78bfa, #f9a8d4);
+  color: white;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width: 768px) {
+  .grid { grid-template-columns: 1fr; }
+  .hero h1 { font-size: 36px; }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="navbar">
+  <a href="#about">About</a>
+  <a href="#experience">Experience</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="hero">
+  <h1>Ananya S</h1>
+  <p>Data Analyst</p>
+  <p>Transforming data into actionable insights to support business decision-making and performance improvement.</p>
+</div>
+
+<div class="section" id="about">
+  <div class="grid">
+    <div>
+      <h2>About Me</h2>
+      <p>
+        Data Analyst with 1 year of experience at Altigreen Propulsion Labs.Experienced in analyzing data, building dashboards, and delivering insights to improve business performance.
+      </p>
+    </div>
+
+    <div>
+      <h2>Skills</h2>
+      <div class="skill">SQL<div class="skill-bar"><div class="skill-fill" style="width:90%"></div></div></div>
+      <div class="skill">Power BI<div class="skill-bar"><div class="skill-fill" style="width:95%"></div></div></div>
+      <div class="skill">Excel<div class="skill-bar"><div class="skill-fill" style="width:100%"></div></div></div>
+      <div class="skill">Python<div class="skill-bar"><div class="skill-fill" style="width:85%"></div></div></div>
+    </div>
+  </div>
+</div>
+
+<div class="section" id="experience">
+  <h2>Education & Experience</h2>
+
+  <div class="grid">
+    <div class="card">
+      <h3>Education</h3>
+      <p><strong>Bachelor of Engineering(Electrical and Electronics)</strong></p>
+      <p>CMR Institute of Technology</p>
+      <p>CGPA: 8.95</p>
+      <br>
+      <a href="https://ieeexplore.ieee.org/document/9545211" target="_blank">View Publication</a>
+    </div>
+
+    <div class="card">
+      <h3>Experience</h3>
+      <p><strong>Graduate Engineer Trainee – Data Analyst</strong></p>
+      <p>Altigreen Propulsion Labs</p>
+      <p>Jan 2023 – Jan 2024</p>
+    </div>
+  </div>
+</div>
+
+<!-- PROJECTS -->
+<div class="section" id="projects">
+  <h2>Projects</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <h3>Quick Commerce Analytics</h3>
+      <p><strong>SQL | Power BI</strong></p>
+      <p><strong>Problem:</strong><br>
+      Limited visibility into customer retention patterns and demand behavior, impacting repeat purchases and operational planning.</p>
+      <p><strong>Analysis & Findings:</strong></p>
+      <ul>
+        <li>Analyzed 200K+ customers and ~3M orders to evaluate purchasing behavior</li>
+        <li>Identified that ~85% of users had low reorder rates, highlighting a major retention gap</li>
+        <li>Discovered 7-day and 30-day purchase cycles, enabling behavioral segmentation</li>
+        <li>Peak demand observed between 10 AM – 3 PM, with highest order volume on Sundays</li>
+      </ul>
+      <p><strong>Recommendations:</strong><br>
+      Proposed targeted retention campaigns, optimized inventory allocation based on peak demand, and improved demand forecasting strategies.</p>
+      <img src="images/quick_commerce.png" class="project-img">
+      <a href="https://drive.google.com/file/d/1eBznszdh4CElXCILDf6j0pfwqJwDWj7u/view?usp=sharing" class="project-link">View Dashboard</a>
+    </div>
+
+    <div class="card">
+      <h3>HR Attrition Analysis</h3>
+      <p><strong>SQL | Power BI</strong></p>
+      <p><strong>Problem:</strong><br>
+      High employee attrition with limited understanding of key drivers affecting workforce stability.</p>
+      <p><strong>Analysis & Findings:</strong></p>
+      <ul>
+        <li>Analyzed 1,400+ employee records across departments and roles</li>
+        <li>Employees working overtime and with low tenure showed 2–3x higher attrition rates</li>
+        <li>Strong correlation between low satisfaction scores and employee churn</li>
+        <li>Higher attrition observed in lower salary bands and employees with longer promotion gaps</li>
+      </ul>
+      <p><strong>Recommendations:</strong><br>
+      Suggested workload optimization, improved employee engagement strategies, and targeted compensation and career progression initiatives.</p>
+      <img src="images/hr-dashboard.png" class="project-img">
+      <a href="https://drive.google.com/file/d/1PisFW48tdEshk7YTadOcUTAADsqnFj4G/view?usp=sharing" class="project-link">View Dashboard</a>
+    </div>
+
+    <div class="card">
+      <h3>Coffee Shop Sales Analysis</h3>
+      <p><strong>Excel</strong></p>
+      <p><strong>Problem:</strong><br>
+      Lack of consolidated insights into sales performance, product contribution, and revenue trends.</p>
+      <p><strong>Analysis & Findings:</strong></p>
+      <ul>
+        <li>Analyzed 9,900+ transactions generating $46K+ revenue and $16K+ profit</li>
+        <li>Identified top-performing categories driving majority of revenue</li>
+        <li>Observed ~30% year-over-year growth with seasonal demand patterns</li>
+        <li>City-level analysis showed top regions contributing 20–25% of revenue</li>
+      </ul>
+      <p><strong>Recommendations:</strong><br>
+      Recommended optimizing product mix, improving inventory planning, and aligning staffing with demand patterns.</p>
+      <img src="images/coffee.png" class="project-img">
+      <a href="https://docs.google.com/spreadsheets/d/1tEyFdHgVsze8BSvmuuMWI0EyqwPMvYOy/edit?usp=sharing&ouid=105700564774146159280&rtpof=true&sd=true" class="project-link">View Project</a>
+    </div>
+
+    <div class="card">
+      <h3>A/B Testing Analysis</h3>
+      <p><strong>Python</strong></p>
+      <p><strong>Problem:</strong><br>
+      Evaluate whether a new landing page design improves conversion rates compared to the existing version.</p>
+      <p><strong>Analysis & Findings:</strong></p>
+      <ul>
+        <li>Analyzed ~290K user sessions ensuring proper experiment design and data integrity</li>
+        <li>Applied Two-Proportion Z-Test to compare conversion rates</li>
+        <li>Results showed no statistically significant improvement (p &gt; 0.05)</li>
+      </ul>
+      <p><strong>Recommendations:</strong><br>
+      Advised retaining the existing design, preventing ineffective rollout and ensuring data-driven decision-making.</p>
+      <a href="https://colab.research.google.com/drive/1rf3TaMJmM1cPKpYW8eDwlcCq2vnAu6xy?usp=sharing" class="project-link">View Analysis</a>
+    </div>
+
+  </div>
+</div>
+
+<div class="section" id="contact">
+  <h2>Contact</h2>
+  <div class="contact-buttons">
+    <a href="https://drive.google.com/file/d/1eu42NO3WMg9TL_wC_A1oaVPdnwFbPiSu/view?usp=sharing">Resume</a>
+    <a href="https://www.linkedin.com/in/ananya-srinivasan-data-analyst">LinkedIn</a>
+    <a href="mailto:ananyasrinivasan134@gmail.com">Email</a>
+  </div>
+</div>
+
+<script>
+const sections = document.querySelectorAll('.section');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('show');
+    }
+  });
+}, { threshold: 0.15 });
+
+sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+</html>
